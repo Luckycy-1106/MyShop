@@ -1,0 +1,73 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: #f7f7f7;
+}
+
+header {
+  background-color: black;
+  padding: 20px 0;
+  text-align: center;
+}
+
+.brand-name {
+  font-family: 'Rubik Mono One', sans-serif;
+  font-size: 48px;
+  color: white;
+  letter-spacing: 2px;
+  margin: 0;
+}
+
+.brand-name .green {
+  color: #00cc66;
+}
+
+nav {
+  margin-top: 15px;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  margin: 0 20px;
+  font-weight: bold;
+  font-size: 16px;
+  transition: color 0.3s ease;
+}
+
+nav a:hover {
+  color: #00cc66;
+}
+
+.slider {
+  width: 100%;
+  height: 500px;
+  overflow: hidden;
+  position: relative;
+}
+
+.slides {
+  display: flex;
+  width: 300%;
+  animation: slide 12s infinite;
+}
+
+.slides img {
+  width: 100%;
+  height: 500px;
+  object-fit: cover;
+}
+
+@keyframes slide {
+  0%   { margin-left: 0%; }
+  33%  { margin-left: -100%; }
+  66%  { margin-left: -200%; }
+  100% { margin-left: 0%; }
+}
+
+footer {
+  background-color: #eee;
+  text-align: center;
+  padding: 15px;
+  font-size: 14px;
+}
